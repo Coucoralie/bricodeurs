@@ -1,5 +1,6 @@
 import "./App.css";
-import Header from "../src/components/Header";
+import Header from "../src/components/Header"
+import FicheThemes from "./components/FicheThemes/FicheThemes";
 
 function App() {
 	return (
@@ -7,6 +8,7 @@ function App() {
 			<div className="flex flex-col items-center justify-center h-screen bg-gray-50">
 				<Header text="ManoMano & Les Bricodeurs" />
 			</div>
+			<FicheThemes />
 		</div>
 	);
 }
