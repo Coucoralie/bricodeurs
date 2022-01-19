@@ -6,20 +6,25 @@ const FicheProduits = () => {
     <div>
       <h1 className='text-5xl font-semibold text-sky-500 mt-6'>Inspiration</h1>
       <div class='font-semibold mt-2'>
-        <h1 class='font-semibold'>texte  ou pas ??? ?</h1>
+        <h1 class='font-semibold'>texte ou pas ??? ?</h1>
 
-        <div class='font-semibold'>6 produits visibles dans cette image</div>
+        <div class='font-semibold'>6 products detected in this picture</div>
       </div>
       <div className=' mt-4 container mx-auto flex flex-col justify-center place-content-center'>
-			<hr class=" "></hr>
+        <hr class=' '></hr>
         <div className=' mx-auto flex flex-col justify-center place-content-center'>
-          <img className=' object-cover rounded ' src={Salon} alt='Image salon' />
+          <img
+            className=' object-cover rounded '
+            src={Salon}
+            alt='Image salon'
+          />
         </div>
-				<h2 className='text-3xl font-semibold text-sky-500 mt-2'>Vous trouverez ici les 	articles détecté sur l'image et présente chez nous</h2>
+        <h2 className='text-3xl font-semibold text-black-500 mt-2'>
+          You can find here the article found on the picture :{" "}
+        </h2>
         <div className='inline-grid grid-cols-3 gap-4 mt-2'>
           <a
-            className='"relative px-6 pt-10 pb-8 bg-white shadow-xl ring-1 ring-gray-900/5 sm:max-w-lg sm:mx-auto sm:rounded-lg sm:px-10">'
-            data-testid='touchpoint-card'
+            className='relative px-6 pt-10 pb-8 bg-white shadow-xl ring-1 ring-gray-900/5 sm:max-w-lg sm:mx-auto sm:rounded-lg sm:px-10 '
             href='https://www.manomano.fr/catalogue/p/table-basse-120x120x40-cm-bois-de-manguier-brut-32817117?model_id=32797998'
           >
             <div class=''>
@@ -34,10 +39,26 @@ const FicheProduits = () => {
             </div>
             <div class=''>1 produit</div>
             <div class=''>Dès 120&nbsp;€</div>
+            <a
+              href='https://www.manomano.fr/catalogue/p/table-basse-120x120x40-cm-bois-de-manguier-brut-32817117?model_id=32797998'
+              class='
+ 	                       inline-block
+										 mt-2
+                     py-2
+                     px-7
+                     border border-[#E5E7EB]
+                     rounded-full
+                     text-base text-body-color
+                     font-medium
+                     hover:border-primary hover:bg-primary hover:text-white
+                     transition
+                     '
+            >
+              View Details
+            </a>
           </a>
-					<a
-            className='"relative px-6 pt-10 pb-8 bg-white shadow-xl ring-1 ring-gray-900/5 sm:max-w-lg sm:mx-auto sm:rounded-lg sm:px-10">'
-            data-testid='touchpoint-card'
+          <a
+            className='relative px-6 pt-10 pb-8 bg-white shadow-xl ring-1 ring-gray-900/5 sm:max-w-lg sm:mx-auto sm:rounded-lg sm:px-10'
             href='https://www.manomano.fr/p/costway-canape-dangle-3-places-convertible-avec-meridienne-reversible-en-cuir-pu-gris-188x62x60cm-pour-salonappartementsejour-40216556'
           >
             <div class=''>
@@ -52,10 +73,26 @@ const FicheProduits = () => {
             </div>
             <div class=''>1 produit</div>
             <div class=''>Dès 750&nbsp;€</div>
+            <a
+              href='https://www.manomano.fr/p/costway-canape-dangle-3-places-convertible-avec-meridienne-reversible-en-cuir-pu-gris-188x62x60cm-pour-salonappartementsejour-40216556'
+              class='
+                     inline-block
+										 mt-2
+                     py-2
+                     px-7
+                     border border-[#E5E7EB]
+                     rounded-full
+                     text-base text-body-color
+                     font-medium
+                     hover:border-primary hover:bg-primary hover:text-white
+                     transition
+                     '
+            >
+              View Details
+            </a>
           </a>
-					<a
-            className='"relative px-6 pt-10 pb-8 bg-white shadow-xl ring-1 ring-gray-900/5 sm:max-w-lg sm:mx-auto sm:rounded-lg sm:px-10">'
-            data-testid='touchpoint-card'
+          <a
+            className='relative px-6 pt-10 pb-8 bg-white shadow-xl ring-1 ring-gray-900/5 sm:max-w-lg sm:mx-auto sm:rounded-lg sm:px-10'
             href='https://www.manomano.fr/p/fauteuil-en-metal-et-osier-naturel-atmosphera-12082044'
           >
             <div class=''>
@@ -70,10 +107,26 @@ const FicheProduits = () => {
             </div>
             <div class=''>1 produit</div>
             <div class=''>Dès 142&nbsp;€</div>
+            <a
+              href='https://www.manomano.fr/p/fauteuil-en-metal-et-osier-naturel-atmosphera-12082044'
+              class='
+                     inline-block
+										 mt-2
+                     py-2
+                     px-7
+                     border border-[#E5E7EB]
+                     rounded-full
+                     text-base text-body-color
+                     font-medium
+                     hover:border-primary hover:bg-primary hover:text-white
+                     transition
+                     '
+            >
+              View Details
+            </a>
           </a>
           <a
-            className='"relative px-6 pt-10 pb-8 bg-white shadow-xl ring-1 ring-gray-900/5 sm:max-w-lg sm:mx-auto sm:rounded-lg sm:px-10">'
-            data-testid='touchpoint-card'
+            className='relative px-6 pt-10 pb-8 bg-white shadow-xl ring-1 ring-gray-900/5 sm:max-w-lg sm:mx-auto sm:rounded-lg sm:px-10'
             href='https://www.manomano.fr/p/desserte-roulante-chariot-de-cuisine-de-2-etages-avec-grand-plan-de-travail-en-acier-inox-sobuy-fkw47-w-5026016'
           >
             <div class=''>
@@ -88,10 +141,26 @@ const FicheProduits = () => {
             </div>
             <div class=''>1 produit</div>
             <div class=''>Dès 249&nbsp;€</div>
+            <a
+              href='https://www.manomano.fr/p/desserte-roulante-chariot-de-cuisine-de-2-etages-avec-grand-plan-de-travail-en-acier-inox-sobuy-fkw47-w-5026016'
+              class='
+                     inline-block
+										 mt-2
+                     py-2
+                     px-7
+                     border border-[#E5E7EB]
+                     rounded-full
+                     text-base text-body-color
+                     font-medium
+                     hover:border-primary hover:bg-primary hover:text-white
+                     transition
+                     '
+            >
+              View Details
+            </a>
           </a>
-					<a
-            className='"relative px-6 pt-10 pb-8 bg-white shadow-xl ring-1 ring-gray-900/5 sm:max-w-lg sm:mx-auto sm:rounded-lg sm:px-10">'
-            data-testid='touchpoint-card'
+          <a
+            className='relative px-6 pt-10 pb-8 bg-white shadow-xl ring-1 ring-gray-900/5 sm:max-w-lg sm:mx-auto sm:rounded-lg sm:px-10 '
             href='https://www.manomano.fr/p/plafonnier-industrielle-retro-25cm-en-forme-diamant-noir-suspension-luminaire-pour-salle-a-mangerbarchambre-12902327'
           >
             <div class=''>
@@ -106,10 +175,27 @@ const FicheProduits = () => {
             </div>
             <div class=''>1 produit</div>
             <div class=''>Dès 85&nbsp;€</div>
+            <a
+              href='https://www.manomano.fr/p/plafonnier-industrielle-retro-25cm-en-forme-diamant-noir-suspension-luminaire-pour-salle-a-mangerbarchambre-12902327'
+              class='
+                     inline-block
+										 mt-2
+                     py-2
+                     px-7
+                     border border-[#E5E7EB]
+                     rounded-full
+                     text-base text-body-color
+                     font-medium
+                     hover:border-primary hover:bg-primary hover:text-white
+                     transition
+                     '
+            >
+              View Details
+            </a>
           </a>
+
           <a
-            className='"relative px-6 pt-10 pb-8 bg-white shadow-xl ring-1 ring-gray-900/5 sm:max-w-lg sm:mx-auto sm:rounded-lg sm:px-10">'
-            data-testid='touchpoint-card'
+            className='relative px-6 pt-10 pb-8 bg-white shadow-xl ring-1 ring-gray-900/5 sm:max-w-lg sm:mx-auto sm:rounded-lg sm:px-10 '
             href='https://www.manomano.fr/p/papier-peint-pas-cher-30219-1-lutece-authentic-walls-en-ligne-2345388'
           >
             <div class=''>
@@ -124,12 +210,29 @@ const FicheProduits = () => {
             </div>
             <div class=''>1 produit</div>
             <div class=''>Dès 249&nbsp;€</div>
+            <a
+              href='https://www.manomano.fr/p/papier-peint-pas-cher-30219-1-lutece-authentic-walls-en-ligne-2345388'
+              class='
+                     inline-block
+										 mt-2
+                     py-2
+                     px-7
+                     border border-[#E5E7EB]
+                     rounded-full
+                     text-base text-body-color
+                     font-medium
+                     hover:border-primary hover:bg-primary hover:text-white
+                     transition
+                     '
+            >
+              View Details
+            </a>
           </a>
         </div>
-				<hr class=""></hr>
-				<div class="h-50">
-					Remet on un carousel avec d'autres inspiration ? ou une autre section
-				</div>
+        <hr class=''></hr>
+        <div class='h-50'>
+          Remet on un carousel avec d'autres inspiration ? ou une autre section
+        </div>
       </div>
       <div />
     </div>
