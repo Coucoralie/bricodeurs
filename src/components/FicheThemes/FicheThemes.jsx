@@ -4,7 +4,7 @@ import cuisine from "../../assets/images/cuisine.jpeg";
 
 const FicheThemes = () => {
   return (
-    <div class="">
+    <div class="flex flex-col">
       <div class="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16">
         <div class="rounded overflow-hidden flex flex-col max-w-xl mx-auto">
           {/* <Link to=""> */}
@@ -26,8 +26,8 @@ const FicheThemes = () => {
           </div>
         </div>
       </div>
-      <div class="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16">
-        <div class="rounded overflow-hidden flex flex-col max-w-xl mx-auto">
+      <div class="max-w-screen-xl p-5 sm:p-10 md:p-16">
+        <div class="rounded overflow-hidden flex flex-col max-w-xl">
           {/* <Link to=""> */}
             <img class="w-full" src={cuisine} alt="cuisine" />
           {/* </Link> */}
@@ -47,7 +47,7 @@ const FicheThemes = () => {
           </div>
         </div>
       </div>
-      <div class="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16">
+      <div class="max-w-screen-xl p-5 mx-auto sm:p-10 md:p-16">
         <div class="rounded overflow-hidden flex flex-col max-w-xl mx-auto">
           {/* <Link to=""> */}
             <img class="w-full" src={cuisine} alt="cuisine" className="img" />
