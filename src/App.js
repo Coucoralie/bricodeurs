@@ -1,13 +1,14 @@
 import "./App.css";
 import Home from "./pages/Home";
 import NavBarTop from "./components/navigation/NavBarTop";
+import HeaderOneCenter from "./components/headers/HeaderOneCenter";
+import HeaderThreeCenter from "./components/headers/HeaderThreeCenter";
+import HeaderTwoLeft from "./components/headers/HeaderTwoLeft";
+import FicheProduits from "./components/FicheProduit/Fiche_produits";
 
 function App() {
 	return (
-		<div className="relative h-full App font-open-sans bg-slate-50">
-			<NavBarTop />
-			<Home />
-		</div>
+		<FicheProduits/>
 	);
 }
 
