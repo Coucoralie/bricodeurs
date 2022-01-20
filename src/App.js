@@ -1,10 +1,14 @@
 import { useState } from "react";
 import "./App.css";
+import Header from "../src/components/Header";
+import Carousel from "./components/Carousel/Carousel";
+import { CarouselData } from './components/Carousel/CarouselData';
 import NavBarTop from "./components/navigation/NavBarTop";
 import HeaderOneCenter from "./components/headers/HeaderOneCenter";
 import HeaderThreeCenter from "./components/headers/HeaderThreeCenter";
 import Upload from "./components/upload/Upload";
 import ModalUpload from "./components/modal/ModalUpload";
+
 
 function App() {
 	const [showModal, setShowModal] = useState(false);
@@ -31,6 +35,9 @@ function App() {
 					<Upload handleShowModal={handleShowModal} />
 				</div>
 			</section>
+			<div>
+			<Carousel slides={CarouselData}/>
+			</div>
 		</div>
 	);
 }
