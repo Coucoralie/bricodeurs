@@ -22,7 +22,7 @@ const Carousel = ({ slides }) => {
 	}
 
 	return (
-		<div className="w-full mx-auto my-24">
+		<div className="w-full mx-auto my-16">
 			<section className="w-full slider">
 				<IoIosArrowDropleftCircle className="left-arrow" onClick={prevSlide} />
 				<IoIosArrowDroprightCircle
