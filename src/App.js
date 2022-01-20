@@ -20,8 +20,6 @@ function App() {
 			<Route path='/' element={<Home />}/>
 			<Route path='/themes' element={<FicheThemes />}/>
 			<Route path='/salon' element={<FicheSalon />}/>
-			<Route path='/Cuisine' element={<FicheCuisine />}/>
-			<Route path='/chambre' element={<FicheChambre />}/>
 		</Routes>
 		</div>
 	);
