@@ -7,6 +7,7 @@ import HeaderOneCenter from "./components/headers/HeaderOneCenter";
 import HeaderThreeCenter from "./components/headers/HeaderThreeCenter";
 import Upload from "./components/upload/Upload";
 import ModalUpload from "./components/modal/ModalUpload";
+import FicheThemes from "./components/FicheThemes/FicheThemes";
 
 function App() {
 	const [showModal, setShowModal] = useState(false);
@@ -36,6 +37,7 @@ function App() {
 			<div>
 				<Carousel slides={CarouselData} />
 			</div>
+			<FicheThemes />
 		</div>
 	);
 }
