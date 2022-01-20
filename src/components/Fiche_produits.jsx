@@ -50,7 +50,7 @@ const FicheProduits = () => {
                      rounded-full
                      text-base text-body-color
                      font-medium
-                     hover:border-primary hover:bg-primary hover:text-white
+                     hover:border-primary hover:bg-primary hover:text-black
                      transition
                      '
             >
@@ -84,7 +84,7 @@ const FicheProduits = () => {
                      rounded-full
                      text-base text-body-color
                      font-medium
-                     hover:border-primary hover:bg-primary hover:text-white
+                     hover:border-primary hover:bg-primary hover:text-black
                      transition
                      '
             >
@@ -118,7 +118,7 @@ const FicheProduits = () => {
                      rounded-full
                      text-base text-body-color
                      font-medium
-                     hover:border-primary hover:bg-primary hover:text-white
+                     hover:border-primary hover:bg-primary hover:text-black
                      transition
                      '
             >
@@ -152,7 +152,7 @@ const FicheProduits = () => {
                      rounded-full
                      text-base text-body-color
                      font-medium
-                     hover:border-primary hover:bg-primary hover:text-white
+                     hover:border-primary hover:bg-primary hover:text-black
                      transition
                      '
             >
@@ -186,7 +186,7 @@ const FicheProduits = () => {
                      rounded-full
                      text-base text-body-color
                      font-medium
-                     hover:border-primary hover:bg-primary hover:text-white
+                     hover:border-primary hover:bg-primary hover:text-black
                      transition
                      '
             >
