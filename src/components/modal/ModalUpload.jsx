@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import image1 from "../../assets/images/cup-iso-color.png";
 import image2 from "../../assets/images/cup-iso-color.png";
-import image3 from "../../assets/images/cup-iso-color.png";
+// import image3 from "../../assets/images/cup-iso-color.png";
 
 const ModalUpload = ({ handleShowModal }) => {
 	const [selected, setSelected] = useState("");

@@ -1,7 +1,6 @@
 import React from "react";
-import Salon from "../../assets/images/Salon.jpg";
+// import Salon from "../../assets/images/Salon.jpg";
 import Cuisine from "../../assets/images/cuisine.jpg";
-import NavBarTop from "../navigation/NavBarTop";
 import HeroCenter from "./HeroCenter";
 
 const salon = [
@@ -80,11 +79,11 @@ const cuisine = [
     price: 41,
   },
 ];
+console.log(salon);
 
-const FicheProduits = ({ type }) => {
+const FicheProduit = ({ type }) => {
   return (
     <div className='relative h-full App font-open-sans bg-slate-50'>
-      <NavBarTop />
       <section className="bg-[url('./assets/images/gradient.png')] bg-cover w-full bg-no-repeat bg-center">
         <div className='flex flex-col items-center justify-end w-full max-w-3xl min-h-[250px]  mx-auto md:pt-0'>
           <HeroCenter text="Now let's see what ManoLens found for you " />
@@ -96,7 +95,7 @@ const FicheProduits = ({ type }) => {
           <img
             className='object-cover rounded '
             src={Cuisine} // mettre type
-            alt='Image salon'
+            alt=' salon'
           />
         </div>
         <h2 className='mt-4 text-3xl font-semibold text-blue-900'>
@@ -107,7 +106,7 @@ const FicheProduits = ({ type }) => {
             (
               object //mettre Type
             ) => (
-              <a className='px-6 pt-10 pb-8 bg-white shadow-lg hover:shadow-xl ring-1 ring-gray-900/5 sm:max-w-lg sm:mx-auto sm:rounded-lg sm:px-10'>
+              <div className='px-6 pt-10 pb-8 bg-white shadow-lg hover:shadow-xl ring-1 ring-gray-900/5 sm:max-w-lg sm:mx-auto sm:rounded-lg sm:px-10'>
                 <div class=''>
                   <picture>
                     <img
@@ -138,13 +137,13 @@ const FicheProduits = ({ type }) => {
                 >
                   View Details
                 </a>
-              </a>
+              </div>
             )
           )}
         </div>
         <hr class=''></hr>
         <p class=''>
-          <a
+          <div
             href=''
             target='_blank'
             class='
@@ -161,7 +160,7 @@ const FicheProduits = ({ type }) => {
        transition
        '          >
             New Inspiration!
-          </a>
+          </div>
         </p>
       </div>
       <div />
@@ -169,4 +168,4 @@ const FicheProduits = ({ type }) => {
   );
 };
 
-export default FicheProduits;
+export default FicheProduit;
