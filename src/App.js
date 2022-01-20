@@ -8,19 +8,19 @@ import FicheSalon from "./components/FicheProduit/FicheSalon";
 import FicheCuisine from "./components/FicheProduit/FicheCuisine";
 import FicheChambre from "./components/FicheProduit/FicheChambre";
 
-
 function App() {
 	return (
 		<div>
-		<div className="relative h-full App font-open-sans bg-slate-50">
-			<NavBarTop />
-		</div>
+			<div className="relative h-full App font-open-sans bg-slate-50">
+				<NavBarTop />
+			</div>
 
-		<Routes>
-			<Route path='/' element={<Home />}/>
-			<Route path='/themes' element={<FicheThemes />}/>
-			<Route path='/salon' element={<FicheSalon />}/>
-		</Routes>
+			<Routes>
+				<Route path="/" element={<Home />} />
+				<Route path="/themes" element={<FicheThemes />} />
+				<Route path="/salon" element={<FicheSalon />} />
+				<Route path="/cuisine" element={<FicheSalon />} />
+			</Routes>
 		</div>
 	);
 }
