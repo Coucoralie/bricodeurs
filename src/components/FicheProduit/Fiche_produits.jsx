@@ -86,13 +86,13 @@ const FicheProduits = ({ type }) => {
     <div className='relative h-full App font-open-sans bg-slate-50'>
       <NavBarTop />
       <section className="bg-[url('./assets/images/gradient.png')] bg-cover w-full bg-no-repeat bg-center">
-        <div className='flex flex-col items-center justify-center w-full max-w-3xl min-h-screen pt-32 mx-auto md:pt-0'>
+        <div className='flex flex-col items-center justify-end w-full max-w-3xl min-h-[250px]  mx-auto md:pt-0'>
           <HeroCenter text="Now let's see what ManoLens found for you " />
         </div>
       </section>
       <div className='container flex flex-col justify-center mx-auto place-content-center'>
         <hr class=' '></hr>
-        <div className='flex flex-col justify-center mx-auto mt-1 place-content-center'>
+        <div className='flex flex-col justify-center mx-auto mt-2 place-content-center'>
           <img
             className='object-cover rounded '
             src={Cuisine} // mettre type
@@ -143,12 +143,13 @@ const FicheProduits = ({ type }) => {
           )}
         </div>
         <hr class=''></hr>
-        <p class='BlogPosts_blogLinkContainer__W8vle'>
+        <p class=''>
           <a
             href=''
             target='_blank'
             class='
             inline-block
+            bg-white
        mt-4
        mb-6
        py-3
