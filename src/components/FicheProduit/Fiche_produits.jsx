@@ -103,23 +103,26 @@ const FicheProduits = ({ type }) => {
           Here the articles available on our website:{" "}
         </h2>
         <div className='inline-grid grid-cols-3 gap-3 mt-4 mb-4'>
-          {cuisine.map((object) => (//mettre Type
-            <a className='px-6 pt-10 pb-8 bg-white shadow-lg hover:shadow-xl ring-1 ring-gray-900/5 sm:max-w-lg sm:mx-auto sm:rounded-lg sm:px-10'>
-              <div class=''>
-                <picture>
-                  <img
-                    alt='table basse'
-                    src={object.image}
-                    height='400'
-                    width='250'
-                  />
-                </picture>
-              </div>
-              <div class=''>1 produit</div>
-              <div class=''>Dès {object.price}&nbsp;€</div>
-              <a
-                href={object.lien}
-                class='
+          {cuisine.map(
+            (
+              object //mettre Type
+            ) => (
+              <a className='px-6 pt-10 pb-8 bg-white shadow-lg hover:shadow-xl ring-1 ring-gray-900/5 sm:max-w-lg sm:mx-auto sm:rounded-lg sm:px-10'>
+                <div class=''>
+                  <picture>
+                    <img
+                      alt='table basse'
+                      src={object.image}
+                      height='400'
+                      width='250'
+                    />
+                  </picture>
+                </div>
+                <div class=''>1 produit</div>
+                <div class=''>Dès {object.price}&nbsp;€</div>
+                <a
+                  href={object.lien}
+                  class='
  	                       inline-block
 										 mt-2
                      py-2
@@ -132,17 +135,33 @@ const FicheProduits = ({ type }) => {
                      transition
                      bg-custom-green
                      '
-              >
-                View Details
+                >
+                  View Details
+                </a>
               </a>
-            </a>
-          ))}
-          
+            )
+          )}
         </div>
         <hr class=''></hr>
-        <div class='h-50'>
-          Remet on une autre section ?
-        </div>
+        <p class='BlogPosts_blogLinkContainer__W8vle'>
+          <a
+            href=''
+            target='_blank'
+            class='
+            inline-block
+       mt-4
+       mb-6
+       py-3
+       px-10
+       border border-[#E5E7EB]l
+       text-base text-body-color
+       font-medium
+       hover:border-primary hover:bg-grey hover:shadow-lg hover:shadow-black-500/50 
+       transition
+       '          >
+            New Inspiration!
+          </a>
+        </p>
       </div>
       <div />
     </div>
