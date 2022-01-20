@@ -47,7 +47,7 @@ const FicheChambre = () => {
     <div className='relative h-full App font-open-sans bg-slate-50 text-center'>
       <section className="bg-[url('./assets/images/gradient.png')] bg-cover w-full bg-no-repeat bg-center">
         <div className='flex flex-col items-center justify-end w-full max-w-3xl min-h-[250px]  mx-auto md:pt-0'>
-          <HeroCenter text="Now let's see what ManoLens found for you " />
+          <HeroCenter text="Now let's see what ManoLens found for you " title="Your Inspiration" />
         </div>
       </section>
       <div className='container flex flex-col justify-center mx-auto place-content-center'>

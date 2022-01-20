@@ -47,7 +47,7 @@ const FicheCuisine = () => {
     <div className='relative h-full App font-open-sans bg-slate-50 text-center'>
       <section className="bg-[url('./assets/images/gradient.png')] bg-cover w-full bg-no-repeat bg-center">
         <div className='flex flex-col items-center justify-end w-full max-w-3xl min-h-[250px]  mx-auto md:pt-0'>
-          <HeroCenter text="Industrial Kitchen" />
+          <HeroCenter text="Industrial Kitchen" title="Our Inspiration" />
         </div>
       </section>
       <div className='container flex flex-col justify-center mx-auto place-content-center'>
@@ -55,7 +55,7 @@ const FicheCuisine = () => {
         <div className='flex flex-col justify-center mx-auto mt-2 place-content-center'>
           <img
             className='object-cover rounded '
-            src={Cuisine} // mettre type
+            src={Cuisine} 
             alt=' salon'
           />
         </div>
