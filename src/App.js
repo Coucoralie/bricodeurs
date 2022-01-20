@@ -1,4 +1,5 @@
 import "./App.css";
+import Home from "./pages/Home";
 import NavBarTop from "./components/navigation/NavBarTop";
 import HeaderOneCenter from "./components/headers/HeaderOneCenter";
 import HeaderThreeCenter from "./components/headers/HeaderThreeCenter";
