@@ -19,7 +19,7 @@ function App() {
 			</section>
 			<section className="flex flex-col items-center w-full px-4 pt-32 mx-auto gap-y-8 gap-x-12 lg:flex-row lg:px-12 pb-36 md:pt-0">
 				<div className="w-full max-w-2xl lg:pr-12">
-					<HeaderTwoLeft text="People living together can collect inspirational images and easily find references in the catalogue." />
+					<HeaderTwoLeft text="Collect inspirational images on the web and easily find references in the catalogue." />
 				</div>
 				<div className="w-full h-auto px-16 py-12 bg-slate-200 bg-opacity-40 rounded-xl">
 					test
@@ -27,7 +27,7 @@ function App() {
 			</section>
 			<section className="flex flex-col items-center w-full px-4 pt-32 mx-auto gap-y-8 gap-x-12 lg:flex-row lg:px-12 pb-36 md:pt-0">
 				<div className="w-full max-w-2xl lg:pr-12">
-					<HeaderTwoLeft text="Professionals save time in finding fashionable references on social networks like Pinterest." />
+					<HeaderTwoLeft text="Professionals save time in finding fashionable references from social networks like Pinterest." />
 				</div>
 				<div className="w-full h-auto px-16 py-12 bg-slate-200 bg-opacity-40 rounded-xl">
 					test
