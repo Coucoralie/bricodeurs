@@ -7,6 +7,7 @@ import HeaderTwoCenter from "../components/headers/HeaderTwoCenter";
 import HeaderThreeCenter from "../components/headers/HeaderThreeCenter";
 import Upload from "../components/upload/Upload";
 import ModalUpload from "../components/modal/ModalUpload";
+import InspoCards from "../inspoCards/InspoCards";
 
 function Home() {
 	const [showModal, setShowModal] = useState(false);
@@ -37,6 +38,9 @@ function Home() {
 				<HeaderThreeCenter text="Find supplies from these images on ManoMano." />
 				<Carousel slides={CarouselData} />
 			</div>
+			<section className="flex flex-col items-center justify-center">
+				<InspoCards />
+			</section>
 		</div>
 	);
 }
