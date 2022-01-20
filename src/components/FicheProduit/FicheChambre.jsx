@@ -47,7 +47,10 @@ const FicheChambre = () => {
     <div className='relative h-full App font-open-sans bg-slate-50 text-center'>
       <section className="bg-[url('./assets/images/gradient.png')] bg-cover w-full bg-no-repeat bg-center">
         <div className='flex flex-col items-center justify-end w-full max-w-3xl min-h-[250px]  mx-auto md:pt-0'>
-          <HeroCenter text="Now let's see what ManoLens found for you " title="Your Inspiration" />
+          <HeroCenter
+            text="Now let's see what ManoLens found for you "
+            title='Your Inspiration'
+          />
         </div>
       </section>
       <div className='container flex flex-col justify-center mx-auto place-content-center'>
@@ -60,7 +63,7 @@ const FicheChambre = () => {
         </h2>
         <div className='inline-grid grid-cols-3 gap-3 mt-4 mb-4'>
           {chambre.map((object) => (
-            <div className='px-6 pt-10 pb-8 bg-white shadow-lg hover:shadow-xl ring-1 ring-gray-900/5 sm:max-w-lg sm:mx-auto sm:rounded-lg sm:px-10'>
+            <div className='transition-all duration-200 ease-in-out hover:scale-105 px-6 pt-10 pb-8 bg-white shadow-lg hover:shadow-xl ring-1 ring-gray-900/5 sm:max-w-lg sm:mx-auto sm:rounded-lg sm:px-10'>
               <div class=''>
                 <picture>
                   <img
@@ -96,8 +99,8 @@ const FicheChambre = () => {
         </div>
         <hr class=''></hr>
         <p class=''>
-          <div
-            href=''
+          <a
+            href='/'
             target='_blank'
             class='
             inline-block
@@ -114,7 +117,7 @@ const FicheChambre = () => {
        '
           >
             New Inspiration!
-          </div>
+          </a>
         </p>
       </div>
       <div />

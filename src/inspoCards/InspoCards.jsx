@@ -5,7 +5,7 @@ const InspoCards = () => {
 	const inspos = [
 		{
 			name: "Kitchens",
-			path: "#",
+			path: "/themes",
 			text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
 			srcImg: cuisine,
 		},

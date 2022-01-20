@@ -94,7 +94,7 @@ const ModalUpload = ({ handleShowModal }) => {
 						Cancel
 					</button>
 					<button className="px-6 py-2 text-white transition-all duration-75 ease-in-out bg-blue-600 rounded-lg hover:bg-blue-800">
-						<a href={selected.path}>Upload</a>
+					<a href={selected.path}>Upload</a>
 					</button>
 				</div>
 			</div>
