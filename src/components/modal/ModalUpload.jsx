@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import image1 from "../../assets/images/cup-iso-color.png";
-import image2 from "../../assets/images/cup-iso-color.png";
-// import image3 from "../../assets/images/cup-iso-color.png";
+import { cuisine } from "../../assets/images/index";
+import salon from "../../assets/images/Salon_standart.jpeg";
 
 const ModalUpload = ({ handleShowModal }) => {
-	const [selected, setSelected] = useState("");
+	const [selected, setSelected] = useState({ name: "", path: "" });
 
 	const modalMenus = [
 		{
@@ -27,23 +26,25 @@ const ModalUpload = ({ handleShowModal }) => {
 
 	const images = [
 		{
-			name: "Salon.png",
-			img: image1,
-			param: "salon_1",
+			name: "Cuisine.png",
+			img: cuisine,
+			path: "/cuisine",
 			selected: false,
 			size: "1.12 Mb",
 		},
 		{
-			name: "Cuisine.png",
-			img: image2,
-			param: "cuisine",
+			name: "Salon.png",
+			img: salon,
+			path: "/salon",
 			selected: false,
 			size: "1.24 Mb",
 		},
 	];
 
 	function handleSelection(item) {
-		setSelected(item.name);
+		let nam = item.name;
+		let url = item.path;
+		setSelected({ name: nam, path: url });
 	}
 
 	return (
@@ -74,12 +75,12 @@ const ModalUpload = ({ handleShowModal }) => {
 							onClick={() => handleSelection(el)}
 							key={el.name}
 							className={
-								selected === el.name
+								selected.name === el.name
 									? "z-10 flex flex-col items-center w-full p-4 rounded-lg bg-blue-400 text-white"
 									: "z-10 flex flex-col items-center w-full p-4 rounded-lg hover:bg-slate-200"
 							}
 						>
-							<img className="w-20" src={el.img} alt="" />
+							<img className="h-20" src={el.img} alt="" />
 							<p className="mt-2 text-sm">{el.name}</p>
 							<p className="mt-1 text-xs">{el.size}</p>
 						</div>
@@ -93,7 +94,7 @@ const ModalUpload = ({ handleShowModal }) => {
 						Cancel
 					</button>
 					<button className="px-6 py-2 text-white transition-all duration-75 ease-in-out bg-blue-600 rounded-lg hover:bg-blue-800">
-						Upload
+						<a href={selected.path}>Upload</a>
 					</button>
 				</div>
 			</div>
