@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { CarouselData } from "./CarouselData";
 import {
 	IoIosArrowDroprightCircle,
 	IoIosArrowDropleftCircle,
@@ -30,7 +29,7 @@ const Carousel = ({ slides }) => {
 					className="right-arrow"
 					onClick={nextSlide}
 				/>
-				{CarouselData.map((slide, index) => {
+				{slides.map((slide, index) => {
 					return (
 						<div
 							className={index === current ? "slide-active" : "slide"}
