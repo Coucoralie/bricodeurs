@@ -3,20 +3,21 @@ import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import Home from "./pages/Home";
 import NavBarTop from "./components/navigation/NavBarTop";
-import FicheThemes from "./components/FicheThemes/FicheThemes"
+import FicheThemes from "./components/FicheThemes/FicheThemes";
+import FicheSalon from "./components/FicheProduit/FicheSalon";
+
 
 function App() {
 	return (
 		<div>
 		<div className="relative h-full App font-open-sans bg-slate-50">
 			<NavBarTop />
-			<Home />
 		</div>
 
 		<Routes>
 			<Route path='/' element={<Home />}/>
 			<Route path='/themes' element={<FicheThemes />}/>
-			<Route path='/' element={<Home />}/>
+			<Route path='/salon' element={<FicheSalon />}/>
 		</Routes>
 		</div>
 	);
