@@ -1,8 +1,12 @@
 import "./App.css";
+import Header from "../src/components/Header";
+import Carousel from "./components/Carousel/Carousel";
+import { CarouselData } from './components/Carousel/CarouselData';
 import NavBarTop from "./components/navigation/NavBarTop";
 import HeaderOneCenter from "./components/headers/HeaderOneCenter";
 import HeaderThreeCenter from "./components/headers/HeaderThreeCenter";
 import HeaderTwoLeft from "./components/headers/HeaderTwoLeft";
+
 
 function App() {
 	return (
@@ -33,6 +37,9 @@ function App() {
 					test
 				</div>
 			</section>
+			<div>
+			<Carousel slides={CarouselData}/>
+			</div>
 		</div>
 	);
 }
