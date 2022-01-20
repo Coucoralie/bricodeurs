@@ -29,12 +29,16 @@ const ModalUpload = ({ handleShowModal }) => {
 		{
 			name: "Salon.png",
 			img: image1,
+			param: "salon_1",
 			selected: false,
+			size: "1.12 Mb",
 		},
 		{
 			name: "Salle_de_bain.png",
 			img: image2,
+			param: "salle-de-bain",
 			selected: false,
+			size: "1.24 Mb",
 		},
 	];
 
@@ -77,6 +81,7 @@ const ModalUpload = ({ handleShowModal }) => {
 						>
 							<img className="w-20" src={el.img} alt="" />
 							<p className="mt-2 text-sm">{el.name}</p>
+							<p className="mt-1 text-xs">{el.size}</p>
 						</div>
 					))}
 				</div>
