@@ -5,6 +5,9 @@ module.exports = {
 			fontFamily: {
 				"open-sans": ['"Open Sans"'],
 			},
+			colors: {
+				"custom-green":'#29b9ad',
+			},
 		},
 	},
 	plugins: [],
