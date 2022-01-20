@@ -1,4 +1,6 @@
+import { motion } from "framer-motion";
 import React from "react";
+import { FadeIn } from "../Animate";
 import { cuisine } from "../assets/images/index";
 
 const InspoCards = () => {
@@ -47,6 +49,7 @@ const InspoCards = () => {
 	];
 
 	return (
+		<FadeIn>
 		<div className="grid w-full max-w-5xl grid-cols-1 gap-10 py-12 md:grid-cols-3">
 			{inspos.map((el) => (
 				<div className="flex flex-col p-8 transition-all duration-200 ease-in-out bg-white border shadow-lg cursor-pointer rounded-2xl shadow-slate-200 border-slate-100 hover:shadow-slate-200 hover:shadow-xl hover:scale-105">
@@ -71,6 +74,7 @@ const InspoCards = () => {
 				</div>
 			))}
 		</div>
+		</FadeIn>
 	);
 };
 

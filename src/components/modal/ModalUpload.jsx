@@ -1,6 +1,9 @@
+import { motion } from "framer-motion";
 import React, { useState } from "react";
-import { cuisine } from "../../assets/images/index";
+import { FadeInTwo } from "../../Animate";
+import chambre from "../../assets/images/chambre.jpg";
 import salon from "../../assets/images/Salon_standart.jpeg";
+
 
 const ModalUpload = ({ handleShowModal }) => {
 	const [selected, setSelected] = useState({ name: "", path: "" });
@@ -26,9 +29,9 @@ const ModalUpload = ({ handleShowModal }) => {
 
 	const images = [
 		{
-			name: "Cuisine.png",
-			img: cuisine,
-			path: "/cuisine",
+			name: "chambre.jpg",
+			img: chambre,
+			path: "/chambre",
 			selected: false,
 			size: "1.12 Mb",
 		},
@@ -48,6 +51,7 @@ const ModalUpload = ({ handleShowModal }) => {
 	}
 
 	return (
+		<FadeInTwo>
 		<div className="z-40 flex flex-row items-center justify-center w-full h-full max-w-3xl border rounded-lg max-h-96 border-slate-200 bg-slate-50">
 			<div className="z-40 w-1/4 border-r h-96 border-slate-200">
 				<div className="flex flex-col px-5 gap-y-2">
@@ -99,6 +103,7 @@ const ModalUpload = ({ handleShowModal }) => {
 				</div>
 			</div>
 		</div>
+		</FadeInTwo>
 	);
 };
 

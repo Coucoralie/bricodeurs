@@ -1,5 +1,7 @@
+import { motion } from "framer-motion";
 import React from "react";
 import { Link } from "react-router-dom";
+import { FadeIn } from "../../Animate";
 import {
   cuisine,
   cuisine2,
@@ -11,6 +13,7 @@ import {
 
 const FicheThemes = () => {
   return (
+<FadeIn>
     <div class="flex flex-col">
       <div class="grid grid-cols-2 gap-4">
         <div class="max-w-screen-xl p-5 sm:p-10 md:p-16 ">
@@ -136,6 +139,7 @@ const FicheThemes = () => {
         </div>
       </div>
     </div>
+    </FadeIn>
   );
 };
 
