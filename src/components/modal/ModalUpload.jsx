@@ -34,9 +34,9 @@ const ModalUpload = ({ handleShowModal }) => {
 			size: "1.12 Mb",
 		},
 		{
-			name: "Salle_de_bain.png",
+			name: "Cuisine.png",
 			img: image2,
-			param: "salle-de-bain",
+			param: "cuisine",
 			selected: false,
 			size: "1.24 Mb",
 		},
