@@ -23,7 +23,7 @@ const Upload = ({ handleShowModal }) => {
 					/>
 				</svg>
 			</div>
-			<p className="z-10 text-xs font-semibold uppercase text-slate-600">
+			<p className="z-0 text-xs font-semibold uppercase text-slate-400">
 				Click here to upload your image
 			</p>
 		</div>

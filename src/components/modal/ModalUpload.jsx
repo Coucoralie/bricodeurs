@@ -47,8 +47,8 @@ const ModalUpload = ({ handleShowModal }) => {
 	}
 
 	return (
-		<div className="z-50 flex flex-row items-center justify-center w-full h-full max-w-3xl border rounded-lg max-h-96 border-slate-200 bg-slate-50">
-			<div className="w-1/4 border-r h-96 border-slate-200">
+		<div className="z-40 flex flex-row items-center justify-center w-full h-full max-w-3xl border rounded-lg max-h-96 border-slate-200 bg-slate-50">
+			<div className="z-40 w-1/4 border-r h-96 border-slate-200">
 				<div className="flex flex-col px-5 gap-y-2">
 					<p className="py-6 font-medium text-left text-gray-500">
 						Local Files
