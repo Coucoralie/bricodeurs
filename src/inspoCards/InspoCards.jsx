@@ -49,7 +49,10 @@ const InspoCards = () => {
 	return (
 		<div className="grid w-full max-w-5xl grid-cols-1 gap-10 py-12 md:grid-cols-3">
 			{inspos.map((el) => (
-				<div className="flex flex-col p-8 transition-all duration-200 ease-in-out bg-white border shadow-lg cursor-pointer rounded-2xl shadow-slate-200 border-slate-100 hover:shadow-slate-200 hover:shadow-xl hover:scale-105">
+				<div
+					key={el.name}
+					className="flex flex-col p-8 transition-all duration-200 ease-in-out bg-white border shadow-lg cursor-pointer rounded-2xl shadow-slate-200 border-slate-100 hover:shadow-slate-200 hover:shadow-xl hover:scale-105"
+				>
 					<div>
 						<img
 							className="object-cover w-full h-40 rounded-xl"
@@ -64,7 +67,7 @@ const InspoCards = () => {
 						<div className="mt-2 text-slate-600">{el.text}</div>
 						<div className="mt-4">
 							<a href={el.path} className="text-sm text-blue-500 underline">
-								See our blog post
+								See supplies
 							</a>
 						</div>
 					</div>
