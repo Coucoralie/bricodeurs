@@ -7,35 +7,28 @@ import ButtonPrimary from "../buttons/ButtonPrimary";
 const NavBarTop = () => {
 	const menus = [
 		{
-			name: "What is it?",
-			url: "#",
-		},
-		{
 			name: "For Consumers",
-			url: "#",
+			url: "#consumers",
 		},
 		{
 			name: "For Professionals",
-			url: "#",
-		},
-		{
-			name: "The Team",
-			url: "#",
+			url: "#suppliers",
 		},
 	];
 
 	return (
-		<div className="fixed top-0 z-50 flex-row items-center justify-between hidden w-full h-20 px-16 bg-opacity-0 border border-b border-gray-200 bg-slate-50 lg:flex">
+		<div className="fixed top-0 z-50 flex-row items-center justify-between hidden w-full h-20 px-16 bg-opacity-0 bg-slate-50 lg:flex">
 			<div className="absolute inset-0 bg-white bg-opacity-25 backdrop-filter backdrop-blur"></div>
 			<div className="z-10 flex flex-row">
 				<p className="pt-1 mr-6 text-xs text-blue-900">
-					<span className="mr-2 text-lg font-bold">Mano Lens</span> by
+					<span className="mr-2 text-lg font-bold">ManoLens</span> by
 				</p>
 				<img className="w-36" src={ManoLogo} alt="ManoMano Logo" />
 			</div>
 			<div className="z-10 flex flex-row justify-between">
 				{menus.map((el) => (
 					<a
+						href={el.url}
 						key={el.name}
 						className="px-6 py-3 mx-2 transition-all duration-150 ease-out border border-opacity-0 rounded-md cursor-pointer text-md text-slate-700 hover:text-slate-900 hover:bg-slate-100 border-slate-50 hover:border-slate-200"
 					>
