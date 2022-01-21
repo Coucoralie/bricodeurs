@@ -10,6 +10,7 @@ import HeaderThreeLeft from "../components/headers/HeaderThreeLeft";
 import Upload from "../components/upload/Upload";
 import ModalUpload from "../components/modal/ModalUpload";
 import InspoCards from "../inspoCards/InspoCards";
+import { FadeInTwo } from "../Animate";
 
 function Home() {
 	const [showModal, setShowModal] = useState(false);
@@ -19,6 +20,7 @@ function Home() {
 	}
 
 	return (
+<FadeInTwo>
 		<div className="relative h-full App font-open-sans bg-slate-50">
 			{showModal ? (
 				<div className="fixed inset-0 z-10 flex flex-col items-center justify-center w-full h-full bg-slate-500 bg-opacity-30">
@@ -97,6 +99,7 @@ function Home() {
 				</div>
 			</section>
 		</div>
+		</FadeInTwo>
 	);
 }
 

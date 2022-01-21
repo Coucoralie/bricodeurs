@@ -1,6 +1,8 @@
 import React, { useState } from "react";
-import { cuisine } from "../../assets/images/index";
+import { FadeInTwo } from "../../Animate";
+import chambre from "../../assets/images/chambre.jpg";
 import salon from "../../assets/images/Salon_standart.jpeg";
+
 
 const ModalUpload = ({ handleShowModal }) => {
 	const [selected, setSelected] = useState({ name: "", path: "" });
@@ -26,16 +28,16 @@ const ModalUpload = ({ handleShowModal }) => {
 
 	const images = [
 		{
-			name: "Cuisine.png",
-			img: cuisine,
-			path: "/cuisine",
+			name: "bedroom.jpg",
+			img: chambre,
+			path: "/bedroom",
 			selected: false,
 			size: "1.12 Mb",
 		},
 		{
-			name: "Salon.png",
+			name: "lounge.png",
 			img: salon,
-			path: "/salon",
+			path: "/lounge",
 			selected: false,
 			size: "1.24 Mb",
 		},
@@ -48,6 +50,7 @@ const ModalUpload = ({ handleShowModal }) => {
 	}
 
 	return (
+		<FadeInTwo>
 		<div className="z-40 flex flex-row items-center justify-center w-full h-full max-w-3xl border rounded-lg max-h-96 border-slate-200 bg-slate-50">
 			<div className="z-40 w-1/4 border-r h-96 border-slate-200">
 				<div className="flex flex-col px-5 gap-y-2">
@@ -94,11 +97,12 @@ const ModalUpload = ({ handleShowModal }) => {
 						Cancel
 					</button>
 					<button className="px-6 py-2 text-white transition-all duration-75 ease-in-out bg-blue-600 rounded-lg hover:bg-blue-800">
-						<a href={selected.path}>Upload</a>
+					<a href={selected.path}>Upload</a>
 					</button>
 				</div>
 			</div>
 		</div>
+		</FadeInTwo>
 	);
 };
 

@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { FadeInTwo } from "../../Animate";
 import Salon from "../../assets/images/Salon.jpg";
 import HeroCenter from "./HeroCenter";
 
@@ -43,31 +45,28 @@ const salon = [
 
 const FicheSalon = () => {
   return (
-    <div className='relative h-full App font-open-sans bg-slate-50 text-center'>
-      <section className="bg-[url('./assets/images/gradient.png')] bg-cover w-full bg-no-repeat bg-center">
-        <div className='flex flex-col items-center justify-end w-full max-w-3xl min-h-[250px]  mx-auto md:pt-0'>
-          <HeroCenter text="Now let's see what ManoLens found for you " title="Your Inspiration"  />
-        </div>
-      </section>
-      <div className='container flex flex-col justify-center mx-auto place-content-center'>
-        <hr class=' '></hr>
-        <div className='flex flex-col justify-center mx-auto mt-2 place-content-center'>
-          <img
-            className='object-cover rounded '
-            src={Salon} 
-            alt=' salon'
-          />
-        </div>
-        <h2 className='mt-4 text-3xl font-semibold text-blue-900 text-center'>
-          Here the articles available on our website:{" "}
-        </h2>
-        <div className='inline-grid grid-cols-3 gap-3 mt-4 mb-4'>
-          {salon.map(
-            (
-              object 
-            ) => (
-              <div className='px-6 pt-10 pb-8 bg-white shadow-lg hover:shadow-xl ring-1 ring-gray-900/5 sm:max-w-lg sm:mx-auto sm:rounded-lg sm:px-10'>
-                <div class=''>
+<FadeInTwo>
+      <div className='relative h-full App font-open-sans bg-slate-50 text-center'>
+        <section className="bg-[url('./assets/images/gradient.png')] bg-cover w-full bg-no-repeat bg-center">
+          <div className='flex flex-col items-center justify-end w-full max-w-3xl min-h-[250px]  mx-auto md:pt-0'>
+            <HeroCenter
+              text="Now let's see what ManoLens found for you "
+              title='Your Inspiration'
+            />
+          </div>
+        </section>
+        <div className='container flex flex-col justify-center mx-auto place-content-center'>
+          <hr></hr>
+          <div className='flex flex-col justify-center mx-auto mt-2 place-content-center'>
+            <img className='object-cover rounded ' src={Salon} alt=' salon' />
+          </div>
+          <h2 className='mt-4 text-3xl font-semibold text-blue-900 text-center'>
+            Here the articles available on our website:{" "}
+          </h2>
+          <div className='inline-grid grid-cols-3 gap-3 mt-4 mb-4'>
+            {salon.map((object) => (
+              <div className='transition-all duration-200 ease-in-out hover:scale-105 px-6 pt-10 pb-8 bg-white shadow-lg hover:shadow-xl ring-1 ring-gray-900/5 sm:max-w-lg sm:mx-auto sm:rounded-lg sm:px-10'>
+                <div>
                   <picture>
                     <img
                       alt='table basse'
@@ -77,12 +76,12 @@ const FicheSalon = () => {
                     />
                   </picture>
                 </div>
-                <div class=''>1 product</div>
-                <div class=''>From {object.price}&nbsp;€</div>
+                <div>1 product</div>
+                <div>From {object.price}&nbsp;€</div>
                 <a
                   href={object.lien}
-                  class='
-                     inline-block
+                  className='
+ 	                       inline-block
 										 mt-2
                      py-2
                      px-7
@@ -93,20 +92,20 @@ const FicheSalon = () => {
                      hover:border-primary hover:bg-grey hover:shadow-lg hover:shadow-black-500/50 
                      transition
                      bg-custom-green
-                     "
-								>
-									View Details
-								</a>
-							</div>
-						)
-					)}
-				</div>
-				<hr className=""></hr>
-				<p className="">
-					<div
-						href=""
-						target="_blank"
-						className="
+                     '
+                >
+                  View Details
+                </a>
+              </div>
+            ))}
+          </div>
+          <hr></hr>
+          <p>
+            <Link to='/'>
+              <button
+                href='/'
+                target='_blank'
+                className='
             inline-block
             bg-white
        mt-4
@@ -118,15 +117,17 @@ const FicheSalon = () => {
        font-medium
        hover:border-primary hover:bg-grey hover:shadow-lg hover:shadow-black-500/50 
        transition
-       "
-					>
-						New Inspiration!
-					</div>
-				</p>
-			</div>
-			<div />
-		</div>
-	);
+       '
+              >
+                New Inspiration!
+              </button>
+            </Link>
+          </p>
+        </div>
+        <div />
+      </div>
+      </FadeInTwo>
+  );
 };
 
 export default FicheSalon;

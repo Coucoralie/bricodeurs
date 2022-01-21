@@ -1,11 +1,12 @@
 import React from "react";
+import { FadeIn } from "../Animate";
 import { cuisine } from "../assets/images/index";
 
 const InspoCards = () => {
 	const inspos = [
 		{
 			name: "Kitchens",
-			path: "#",
+			path: "/themes",
 			text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
 			srcImg: cuisine,
 		},
@@ -47,6 +48,7 @@ const InspoCards = () => {
 	];
 
 	return (
+		<FadeIn>
 		<div className="grid w-full max-w-5xl grid-cols-1 gap-10 py-12 md:grid-cols-3">
 			{inspos.map((el) => (
 				<div
@@ -74,6 +76,7 @@ const InspoCards = () => {
 				</div>
 			))}
 		</div>
+		</FadeIn>
 	);
 };
 
