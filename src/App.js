@@ -5,6 +5,8 @@ import Home from "./pages/Home";
 import NavBarTop from "./components/navigation/NavBarTop";
 import FicheThemes from "./components/FicheThemes/FicheThemes";
 import FicheSalon from "./components/FicheProduit/FicheSalon";
+import FicheCuisine from "./components/FicheProduit/FicheCuisine";
+import FicheChambre from "./components/FicheProduit/FicheChambre";
 
 function App() {
 	return (
