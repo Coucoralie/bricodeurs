@@ -3,12 +3,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FadeIn } from "../../Animate";
 import {
-  cuisine,
-  cuisine2,
-  cuisine3,
-  cuisine4,
-  cuisine5,
-  cuisine6,
+	cuisine,
+	cuisine2,
+	cuisine3,
+	cuisine4,
+	cuisine5,
+	cuisine6,
 } from "../../assets/images/index";
 
 const FicheThemes = () => {

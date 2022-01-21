@@ -6,42 +6,42 @@ import Salon from "../../assets/images/Salon.jpg";
 import HeroCenter from "./HeroCenter";
 
 const salon = [
-  {
-    image:
-      "https://cdn.manomano.com/images/images_products/6333895/T/31561159_1.jpg",
-    lien: "https://www.manomano.fr/catalogue/p/table-basse-120x120x40-cm-bois-de-manguier-brut-32817117?model_id=32797998",
-    price: 277,
-  },
-  {
-    image:
-      "https://cdn.manomano.com/images/images_products/5380911/T/28159004_1.jpg",
-    lien: "https://www.manomano.fr/p/costway-canape-dangle-3-places-convertible-avec-meridienne-reversible-en-cuir-pu-gris-188x62x60cm-pour-salonappartementsejour-40216556",
-    price: 420,
-  },
-  {
-    image:
-      "https://cdn.manomano.com/images/images_products/3273479/T/12402576_1.jpg",
-    lien: "https://www.manomano.fr/p/fauteuil-en-metal-et-osier-naturel-atmosphera-12082044",
-    price: 100,
-  },
-  {
-    image:
-      "https://cdn.manomano.com/images/images_products/3968002/T/7927830_1.jpg",
-    lien: "https://www.manomano.fr/p/desserte-roulante-chariot-de-cuisine-de-2-etages-avec-grand-plan-de-travail-en-acier-inox-sobuy-fkw47-w-5026016",
-    price: 135,
-  },
-  {
-    image:
-      "https://cdn.manomano.com/images/images_products/11268239/T/21931676_1.jpg",
-    lien: "https://www.manomano.fr/p/plafonnier-industrielle-retro-25cm-en-forme-diamant-noir-suspension-luminaire-pour-salle-a-mangerbarchambre-12902327",
-    price: 19,
-  },
-  {
-    image:
-      "https://cdn.manomano.com/images/images_products/31911/T/16134106_2.jpg",
-    lien: "https://www.manomano.fr/p/papier-peint-pas-cher-30219-1-lutece-authentic-walls-en-ligne-2345388",
-    price: 12,
-  },
+	{
+		image:
+			"https://cdn.manomano.com/images/images_products/6333895/T/31561159_1.jpg",
+		lien: "https://www.manomano.fr/catalogue/p/table-basse-120x120x40-cm-bois-de-manguier-brut-32817117?model_id=32797998",
+		price: 277,
+	},
+	{
+		image:
+			"https://cdn.manomano.com/images/images_products/5380911/T/28159004_1.jpg",
+		lien: "https://www.manomano.fr/p/costway-canape-dangle-3-places-convertible-avec-meridienne-reversible-en-cuir-pu-gris-188x62x60cm-pour-salonappartementsejour-40216556",
+		price: 420,
+	},
+	{
+		image:
+			"https://cdn.manomano.com/images/images_products/3273479/T/12402576_1.jpg",
+		lien: "https://www.manomano.fr/p/fauteuil-en-metal-et-osier-naturel-atmosphera-12082044",
+		price: 100,
+	},
+	{
+		image:
+			"https://cdn.manomano.com/images/images_products/3968002/T/7927830_1.jpg",
+		lien: "https://www.manomano.fr/p/desserte-roulante-chariot-de-cuisine-de-2-etages-avec-grand-plan-de-travail-en-acier-inox-sobuy-fkw47-w-5026016",
+		price: 135,
+	},
+	{
+		image:
+			"https://cdn.manomano.com/images/images_products/11268239/T/21931676_1.jpg",
+		lien: "https://www.manomano.fr/p/plafonnier-industrielle-retro-25cm-en-forme-diamant-noir-suspension-luminaire-pour-salle-a-mangerbarchambre-12902327",
+		price: 19,
+	},
+	{
+		image:
+			"https://cdn.manomano.com/images/images_products/31911/T/16134106_2.jpg",
+		lien: "https://www.manomano.fr/p/papier-peint-pas-cher-30219-1-lutece-authentic-walls-en-ligne-2345388",
+		price: 12,
+	},
 ];
 
 const FicheSalon = () => {
