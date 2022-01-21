@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import React from "react";
 import { FadeIn } from "../Animate";
 import { cuisine } from "../assets/images/index";

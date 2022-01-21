@@ -10,7 +10,6 @@ import HeaderThreeLeft from "../components/headers/HeaderThreeLeft";
 import Upload from "../components/upload/Upload";
 import ModalUpload from "../components/modal/ModalUpload";
 import InspoCards from "../inspoCards/InspoCards";
-import { motion } from "framer-motion";
 import { FadeInTwo } from "../Animate";
 
 function Home() {

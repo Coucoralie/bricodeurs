@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FadeIn, FadeInTwo } from "../../Animate";
+import { FadeInTwo } from "../../Animate";
 import Chambre from "../../assets/images/chambre.jpg";
 import HeroCenter from "./HeroCenter";
 
