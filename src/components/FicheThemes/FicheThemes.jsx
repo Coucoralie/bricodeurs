@@ -18,7 +18,7 @@ const FicheThemes = () => {
       <div class="grid grid-cols-2 gap-4">
         <div class="max-w-screen-xl p-5 sm:p-10 md:p-16 ">
           <div class="rounded overflow-hidden flex flex-col max-w-xl">
-            <Link to="/cuisine">
+            <Link to="/kitchen">
             <img class="w-full shadow-xl" src={cuisine} alt="cuisine" />
             </Link>
             <div class="relative -mt-16 px-10 pt-5 pb-16 bg-white m-10 border border-gray-100 shadow-xl">

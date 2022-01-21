@@ -19,9 +19,9 @@ function App() {
 			<Routes>
 				<Route path="/" element={<Home />} />
 				<Route path="/themes" element={<FicheThemes />} />
-				<Route path="/salon" element={<FicheSalon />} />
-				<Route path="/cuisine" element={<FicheCuisine />} />
-				<Route path="/chambre" element={<FicheChambre />} />
+				<Route path="/lounge" element={<FicheSalon />} />
+				<Route path="/kitchen" element={<FicheCuisine />} />
+				<Route path="/bedroom" element={<FicheChambre />} />
 			</Routes>
 			</AnimatePresence>
 		</div>

@@ -29,16 +29,16 @@ const ModalUpload = ({ handleShowModal }) => {
 
 	const images = [
 		{
-			name: "chambre.jpg",
+			name: "bedroom.jpg",
 			img: chambre,
-			path: "/chambre",
+			path: "/bedroom",
 			selected: false,
 			size: "1.12 Mb",
 		},
 		{
-			name: "Salon.png",
+			name: "lounge.png",
 			img: salon,
-			path: "/salon",
+			path: "/lounge",
 			selected: false,
 			size: "1.24 Mb",
 		},
